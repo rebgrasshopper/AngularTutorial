@@ -33,7 +33,7 @@ export class CartService {
   }
 
   getShippingPrices() {
-    this.shippingCosts = this.http.get<ShippingCosts[]>("/assets/shipping.json");
+    this.shippingCosts = this.http.get<ShippingCosts[]>("./assets/shipping.json");
     return this.shippingCosts;
   }
 }
